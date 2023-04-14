@@ -26,6 +26,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       })
+      
   }
 
   const moveMapTo = (newLoc) => {
@@ -89,7 +90,7 @@ function App() {
   return (
     <div className="App">
       <div className="control">
-        <h2>Map Controls</h2>
+        <h2>Location Controls</h2>
         <div className="search-wrapper">
           <div className="search-control">
             <input className="input" type="text" placeholder="Search Location"
