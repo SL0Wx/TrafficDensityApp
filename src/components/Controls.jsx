@@ -32,7 +32,7 @@ const Controls = ({ map, setMapLongitude, setMapLatitude }) => {
       })
       .then((res) => {
         let streetList = [];
-        res.results.map((item, i) => {
+        res.results.map((item) => {
           if (item.address.streetName 
           && streetList.some(street => street.streetName === item.address.streetName) === false
           && item.address.municipality === city) {
